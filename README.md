@@ -1,73 +1,129 @@
-# Welcome to your Lovable project
+# 🩺 HealthGuardAI
+### AI-Powered Digital Health Assistant for Proactive Chronic Disease Management
 
-## Project info
+HealthGuardAI (ChronicleAI) is an intelligent health management system designed to support patients with chronic conditions such as **diabetes** and **hypertension**.  
+It uses **AI, Machine Learning, IoT device data, secure backend APIs, and a modern UI** to provide personalized insights, real-time monitoring, and medication adherence tracking.
 
-**URL**: https://lovable.dev/projects/4eb9c3fc-3250-4cd3-bd2c-6d66d20fe0f2
+---
 
-## How can I edit this code?
+## 📌 Table of Contents
+- [Problem Statement](#problem-statement)
+- [Key Features](#key-features)
+- [Tech Stack](#tech-stack)
+- [System Architecture](#system-architecture)
+- [Screenshots](#screenshots)
+- [Installation Guide](#installation-guide)
+- [Environment Variables](#environment-variables)
+- [Available API Endpoints](#available-api-endpoints)
+- [AI & ML Engine](#ai--ml-engine)
+- [IoT Device Integration](#iot-device-integration)
+- [Security](#security)
+- [Future Enhancements](#future-enhancements)
+- [Team](#team)
 
-There are several ways of editing your application.
+---
 
-**Use Lovable**
+# 🧠 Problem Statement
+Chronic diseases require **continuous monitoring**, **personalized treatment**, and **timely intervention**.  
+However, most patients:
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/4eb9c3fc-3250-4cd3-bd2c-6d66d20fe0f2) and start prompting.
+- Forget medication doses  
+- Lack real-time insights  
+- Cannot interpret their glucose/BP trends  
+- Don’t have access to actionable recommendations  
+- Face privacy risks with health apps  
 
-Changes made via Lovable will be committed automatically to this repo.
+**HealthGuardAI solves these issues using AI, ML, IoT, secure backend design, and a user-friendly dashboard.**
 
-**Use your preferred IDE**
+---
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+# 🚀 Key Features
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+### **🧠 AI Assistant**
+- Gemini LLM-based health insights  
+- Personalized guidance  
+- Natural language explanations of vitals  
 
-Follow these steps:
+### **📊 Health Dashboard**
+- Daily vitals summary  
+- Glucose, BP, heart rate charts  
+- Weekly & monthly trends  
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+### **💊 Medication Management**
+- Add medications  
+- Mark doses as taken  
+- Track adherence  
+- Smart reminders  
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+### **📡 IoT Device Simulator**
+Simulates real IoT devices (with backend integration):
+- Fitness Tracker — Heart rate, Steps, Calories  
+- Glucometer — Glucose levels  
+- BP Monitor — Systolic/Diastolic readings  
+- Real-time reading cards  
+- Secure storage in MongoDB  
 
-# Step 3: Install the necessary dependencies.
-npm i
+### **🔐 Privacy & Security**
+- JWT authentication  
+- AES-256 encryption for sensitive data  
+- Secure backend architecture  
+- Privacy Mode (“Blur/Pseudonymize sensitive data”)  
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+### **📚 Educational Resources**
+- Curated articles  
+- Chronic disease management info  
+- Lifestyle guidance  
 
-**Edit a file directly in GitHub**
+---
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+# 🛠 Tech Stack
 
-**Use GitHub Codespaces**
+### **Frontend**
+- React.js  
+- Context API  
+- TailwindCSS / Custom CSS  
+- Axios  
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+### **Backend**
+- Node.js  
+- Express.js  
+- MongoDB + Mongoose  
+- JWT Authentication  
+- AES-256 Encryption  
+- ioT Routes + Simulation Logic  
 
-## What technologies are used for this project?
+### **AI & ML**
+- Gemini API (LLM Insights)  
+- TensorFlow.js (Risk scoring / trend evaluation)  
 
-This project is built with:
+### **IoT Integration**
+- IoT Simulation API  
+- Architecture ready for:
+  - Google Fit  
+  - Apple HealthKit (OAuth 2.0)
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+---
 
-## How can I deploy this project?
+# 🏗 System Architecture
 
-Simply open [Lovable](https://lovable.dev/projects/4eb9c3fc-3250-4cd3-bd2c-6d66d20fe0f2) and click on Share -> Publish.
+React Frontend (UI/UX)
+│
+Axios API Calls
+│
+Node.js + Express Backend
+│
+MongoDB Database (Users, Logs, IoT Readings, Medications)
+│
+TensorFlow.js ML Engine (Risk Prediction)
+│
+Gemini AI (Insights & Recommendations)
+│
+IoT Simulator → Real Wearables (Future)
 
-## Can I connect a custom domain to my Lovable project?
 
-Yes, you can!
+---
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+# 🖼 Screenshots
+https://github.com/greeshmagowda06/Astrocoders/tree/main/UI%20images
+# ⚙️ Installation Guide
+https://github.com/greeshmagowda06/Astrocoders
