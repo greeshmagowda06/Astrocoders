@@ -126,4 +126,148 @@ IoT Simulator → Real Wearables (Future)
 # 🖼 Screenshots
 https://github.com/greeshmagowda06/Astrocoders/tree/main/UI%20images
 # ⚙️ Installation Guide
+repo link:
 https://github.com/greeshmagowda06/Astrocoders
+
+2️⃣ Backend Setup
+cd backend
+npm install
+
+
+Run the server:
+
+npm run dev
+
+3️⃣ Frontend Setup
+cd frontend
+npm install
+npm run dev
+
+🌍 Environment Variables
+
+Create .env in backend/:
+
+PORT=4000
+MONGO_URI=your_mongodb_connection
+JWT_SECRET=your_jwt_secret
+ENCRYPTION_KEY=your_AES_secret_key
+GEMINI_API_KEY=your_gemini_key
+
+
+Create .env in frontend/:
+
+VITE_API_BASE_URL=http://localhost:4000
+VITE_GEMINI_API_KEY=your_key
+
+🔌 Available API Endpoints
+Auth
+POST /api/auth/register
+POST /api/auth/login
+GET  /api/auth/me
+
+IoT
+POST /api/iot/simulate/fitness
+POST /api/iot/simulate/glucose
+POST /api/iot/simulate/bp
+GET  /api/iot/readings
+
+Medications
+POST /api/medications
+PATCH /api/medications/taken/:id
+GET  /api/medications
+
+Health Logs
+POST /api/readings
+GET  /api/readings
+
+🧬 AI & ML Engine
+Gemini AI
+
+Used for:
+
+Explaining vitals
+
+Answering medical questions
+
+Lifestyle guidance
+
+Personalized insights
+
+TensorFlow.js
+
+Used for:
+
+Basic risk scoring
+
+Glucose/BP abnormality detection
+
+Trend evaluation
+(batch model inside backend/service)
+
+📡 IoT Device Integration
+
+✔ Fully implemented:
+
+IoT Simulator (Fitness, Glucose, BP)
+
+Backend routes for each device
+
+Database storage
+
+Real-time UI updates
+
+⚠ Future implementation:
+
+Real Google Fit integration
+
+Real Apple HealthKit OAuth 2.0
+
+BLE wearable device support
+
+🔐 Security
+
+AES-256 encryption for sensitive tokens
+
+JWT authentication
+
+Helmet.js
+
+CORS protection
+
+Rate limiting
+
+Privacy Mode (blur sensitive PHI)
+
+Environment variable isolation
+
+🚀 Future Enhancements
+
+Doctor dashboard
+
+Automated alerts based on ML models
+
+Multi-language support
+
+Advanced LSTM-based risk prediction
+
+Wearable ECG support
+
+FHIR interoperability
+
+👥 Team
+
+Team ChronicleAI
+
+AI/ML
+
+IoT Integration
+
+Frontend UI/UX
+
+Backend Services
+
+Security & Architecture
+
+⭐ Final Note
+
+This project was built during a hackathon to demonstrate a functional, scalable, and secure digital health ecosystem using AI, ML, IoT, and modern web technologies.
